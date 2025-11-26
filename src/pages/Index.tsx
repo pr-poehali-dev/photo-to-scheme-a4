@@ -1,7 +1,7 @@
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white p-8 print:p-4 flex items-center justify-center">
-      <div className="w-[210mm] max-w-full mx-auto bg-white">
+    <div className="min-h-screen bg-white p-8 print:p-4 flex items-center justify-center" style={{ fontFamily: "'Times New Roman', serif" }}>
+      <div className="w-[210mm] max-w-full mx-auto bg-white text-[14pt]">
         {/* Заголовок */}
         <div className="text-center mb-8">
           <h1 className="text-xl font-bold text-black mb-2">
@@ -20,21 +20,27 @@ const Index = () => {
               <div className="border-2 border-black bg-white p-4 rounded-md min-h-[80px] flex items-center justify-center">
                 <p className="text-sm font-medium text-black">Процедурный кабинет</p>
               </div>
-              <div className="h-16 w-0.5 bg-black mx-auto"></div>
+              <div className="h-16 w-0.5 bg-black mx-auto relative">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+              </div>
             </div>
 
             <div className="w-[30%] text-center">
               <div className="border-2 border-black bg-white p-4 rounded-md min-h-[80px] flex items-center justify-center">
                 <p className="text-sm font-medium text-black">Перевязочный кабинет</p>
               </div>
-              <div className="h-16 w-0.5 bg-black mx-auto"></div>
+              <div className="h-16 w-0.5 bg-black mx-auto relative">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+              </div>
             </div>
 
             <div className="w-[30%] text-center">
               <div className="border-2 border-black bg-white p-4 rounded-md min-h-[80px] flex items-center justify-center">
                 <p className="text-sm font-medium text-black">Операционный блок</p>
               </div>
-              <div className="h-16 w-0.5 bg-black mx-auto"></div>
+              <div className="h-16 w-0.5 bg-black mx-auto relative">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+              </div>
             </div>
           </div>
 
@@ -68,13 +74,19 @@ const Index = () => {
           {/* Стрелки к первому контейнеру */}
           <div className="flex justify-between mb-4 relative">
             <div className="w-[30%] flex justify-center">
-              <div className="h-12 w-0.5 bg-black"></div>
+              <div className="h-12 w-0.5 bg-black relative">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+              </div>
             </div>
             <div className="w-[30%] flex justify-center">
-              <div className="h-12 w-0.5 bg-black"></div>
+              <div className="h-12 w-0.5 bg-black relative">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+              </div>
             </div>
             <div className="w-[30%] flex justify-center">
-              <div className="h-12 w-0.5 bg-black"></div>
+              <div className="h-12 w-0.5 bg-black relative">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+              </div>
             </div>
           </div>
 
@@ -85,7 +97,9 @@ const Index = () => {
                 сбрасывается в одноразовый контейнер с дезинфекцией<br />Авансепт 2%
               </p>
             </div>
-            <div className="h-12 w-0.5 bg-black mx-auto"></div>
+            <div className="h-12 w-0.5 bg-black mx-auto relative">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+            </div>
           </div>
 
           {/* Второй контейнер */}
@@ -95,7 +109,9 @@ const Index = () => {
                 сбрасывается в одноразовый полиэтиленовый пакет с<br />дезинфекцией Авансепт 2%
               </p>
             </div>
-            <div className="h-12 w-0.5 bg-black mx-auto"></div>
+            <div className="h-12 w-0.5 bg-black mx-auto relative">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+            </div>
           </div>
 
           {/* Третий контейнер */}
@@ -109,13 +125,19 @@ const Index = () => {
 
           {/* Разветвление */}
           <div className="flex justify-center mb-8">
-            <div className="w-0.5 h-12 bg-black"></div>
+            <div className="w-0.5 h-12 bg-black relative">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+            </div>
           </div>
 
           <div className="flex justify-center mb-8 relative">
             <div className="absolute top-0 left-[25%] right-[25%] h-0.5 bg-black"></div>
-            <div className="absolute top-0 left-[25%] w-0.5 h-12 bg-black"></div>
-            <div className="absolute top-0 right-[25%] w-0.5 h-12 bg-black"></div>
+            <div className="absolute top-0 left-[25%] w-0.5 h-12 bg-black">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+            </div>
+            <div className="absolute top-0 right-[25%] w-0.5 h-12 bg-black">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-black"></div>
+            </div>
           </div>
 
           {/* Финальные блоки */}
